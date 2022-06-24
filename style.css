@@ -1,0 +1,119 @@
+body{
+  font-size: 23px;
+  font-family: 'Brush Script MT', sans-serif;
+  color: #262626;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+h1{
+  width: 500px;
+  font-weight: 300;
+  margin: 40px auto;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #333333;
+  color: #fff;
+  border-radius: 10px;
+}
+.question{
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 15px;
+}
+button{
+  font-family: 'Brush Script MT', sans-serif;
+  font-size: 22px;
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 6px #b8b8b8;
+}
+button:hover{
+  background-color: #4d4d4d;
+}
+button:active {
+  background-color: #4d4d4d;
+  box-shadow: 0 3px #b8b8b8;
+  transform: translateY(3px);
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+  background-color: #bfbfbf;
+}
+.container input:checked ~ .checkmark {
+  background-color: #333333;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
