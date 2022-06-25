@@ -4,7 +4,7 @@ body{
   color: #262626;
   font-weight: 300;
   text-align: center;
-  background-color: #f8f6f0;
+  background-color: #ffffff;
 }
 h1{
   line-height : 40px;
@@ -73,7 +73,7 @@ button:active {
 }
 
 .res{
-  color: #e6e6e6;
+  color: #000000;
 }
 
 .container {
